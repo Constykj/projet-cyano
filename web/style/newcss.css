@@ -1,0 +1,347 @@
+/* 
+    Document   : newcss
+    Created on : Nov 17, 2013, 12:25:15 AM
+    Author     : HP USER
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+table{
+    /*border:  black solid 1px;*/ 
+}
+
+.bord {
+
+    border: white;
+}
+
+table.mtable {
+    border-collapse:collapse;
+    width:100%;
+}
+
+th.mheader, td.mtd {
+    border:1px solid black;
+    width:25%;
+}
+td.mtd {
+    text-align:center;
+}
+
+
+
+table.mtable1 {
+    border-collapse:collapse;    
+}
+
+th.mheader1, td.mtd1, td.tit {
+    border:1px solid black;
+     
+}
+
+td.tit {
+    font-weight: bold;
+    text-align:left;
+    padding-left: 10px;
+    padding-right: 10px
+}
+td.mtd1 {
+    text-align:left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.lienBtn {
+
+    border: black solid 1px;
+    padding-right: 2px;
+    padding-left:  2px;
+}
+
+
+.av {
+
+}
+
+fieldset {
+    background-color:  lightcyan;
+}
+
+#navigation li {
+    display: inline;
+
+}
+#er{
+    border: none;
+
+    color: red;
+    font-size: 20px; 
+}
+
+#navigation li a {
+    padding: 4px 20px ;
+    background: #fff ;
+    color: black ;
+    border: 2px solid #600 ;
+    font: 1em "Trebuchet MS",Arial,sans-serif ;
+    line-height: 1em ;
+    text-align: center ;
+    text-decoration: none ;
+}
+
+#navigation li a:hover, #navigation li a:focus, #navigation li a:active {
+    background: cornflowerblue ;
+    text-decoration: none ;
+    color: white ;
+
+}
+ 
+
+.bor1{
+    font-size: medium;
+    font-weight: bold;
+    border-width: 1px; 
+
+}
+
+.boldtr{
+    font-size: medium;
+    font-weight: bold;
+    border-width: 1px; 
+
+
+}
+
+.boldtr1{
+    font-size: medium;
+    font-weight: bold;
+    border-width: 1px; 
+
+
+
+}
+
+.cellrap {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+}
+table#t{
+
+    padding-left:770px; 
+
+}
+h1#h
+{
+    padding-left:40%; 
+}
+
+.entete {
+
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 120px;
+
+}
+
+.entete1 {
+
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 120px;
+
+}
+.titre{
+    padding-left: 20px;
+    text-align:  center;
+    width: 100%;
+    font-size: 38px;  
+
+}
+.titre1{
+    padding-top: 40px;
+    padding-left: 20px;
+    text-align:  center;
+    width: 100%;
+    font-size: 38px;  
+
+}
+.menuenete {
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px; 
+}
+
+.session {
+    float: right;
+    margin-right: 0px;
+    margin-top:  -18px;
+    background-color:  white;
+    width: 300px;
+    height: 15px;
+    text-align:  center;
+    font-size: small;
+
+}
+
+.piedPage {
+
+    font-family: sans-serif;
+    font-size: xx-small;
+    font-style: italic;
+    text-align: right;  
+
+}
+
+.error {
+    color: red;
+}
+
+#b1
+{
+    margin-left: 30px;
+    width: 200px;
+    float: left;
+}
+
+.field{
+    background-color: azure;
+    width: 500px;
+    height: 130px;
+    padding-top: 2%;
+    margin-left: 30%;
+    margin-top: 18%;
+
+    background-attachment: fixed;
+}
+
+.img{
+    width: 300px;
+    height: 200px;
+    margin-left: 35%;
+    margin-top: 50px;
+
+}
+
+
+
+
+
+
+.tb
+{
+    margin-left: 25%; 
+    border: none ;
+}
+.td 
+{
+    vertical-align:  top;
+    border: none;
+}
+
+.fld1{    
+    // float: left;
+    // border-radius: 10px;
+    //  width: 250px;
+    margin-left: 10px;
+    background-color: lightcyan;
+}
+
+.fld2{    
+
+    margin-top: 380px;
+
+}
+
+legend {
+
+    font-weight: bold;
+}
+.milieu{
+    padding-right: 50px; 
+    border: white;
+}
+.pied
+{
+    padding-left: 850px;
+}
+
+#map1 {
+    float: right;
+    margin-right: 100px;
+
+}
+#map0 {
+    float: left;
+    margin-right: 100px;
+
+}
+#map2 {
+    float: bottom;
+    margin-top:  450px;
+
+}
+
+#map10 {
+    float: left;
+
+
+}
+#map11 {
+    float: right;
+
+
+}
+
+#map12 {
+    margin-top: 450px;
+
+}
+
+#resultat{
+    border: none;
+    background-color: lightcyan;
+    color: red;
+    font-size: 20px;
+}
+
+#bloc_t {
+
+    width: 915px;
+    height: 300px;
+    overflow-y: auto;
+    margin-top: 20px;
+     
+}
+
+.bloc_1 {
+
+    width: 950px;
+    height: 130px;
+}
+
+.bloc_2 {
+    background-color: lightcyan;
+    float: left;
+    width: 170px;
+    height: 100px;
+}
+
+.bloc_3 {
+    background-color: lightcyan;
+    float: left;
+    width: 230px;
+    height: 100px; 
+}
+
+.ssblock {
+    text-align: center;
+}

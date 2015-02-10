@@ -1,0 +1,48 @@
+    <script type="text/javascript">
+            function Lettres(champ) {
+                if (!/^[a-zA-Z]+$/.test(champ.value)) {
+                   // alert("Vous avez entré un chiffre");
+                   document.getElementById("er").value="Vous avez entré un chiffre";
+                    champ.focus();
+                    return false;
+                }
+                return true;
+            }
+            function Chiffres(champ) {
+                if (!/^[0-9]+$/.test(champ.value)) {
+                     document.getElementById("er").value="Vous avez entré une lettre";
+                   // alert("Vous avez entré une lettre ");
+                    champ.focus();
+                    return false;
+                }
+                return true;
+            }
+            function verif() {
+                var ok = true;
+                ok = ok && Lettres(document.getElementById("designation").value);
+                ok = ok && Chiffres(document.getElementById("designation").value);
+
+                return ok;
+            }
+             function efface() {
+                 document.getElementById("er").value="";
+            }
+        </script>
+
+
+    </head>
+    <body>
+        <%@include file="/menuapp_1.jsp" %>
+
+        <h1>Page creation Quartier </h1>
+
+        <html:form action="creerquartier.do" method="post" >
+
+            <table>
+
+
+                <tr>
+                    <td class="bord">  <bean:message key="quartier.designation"/> </td>
+                    <td class="bord">  <html:text styleId="designation"  property="designation" size="25"  onchange="efface()" onblur="Chiffres(this)" /> </td>
+                    <td class="bord">   <input id="er" type="text"/>  </td>
+                </tr>

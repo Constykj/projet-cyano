@@ -1,0 +1,1117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+
+
+<struts-config>
+    <form-beans>
+        <form-bean name="rapport" type="com.pasteur.ci.form.rapport.rapport"/>
+        <form-bean name="rapport" type="com.pasteur.ci.form.rapport"/>
+        <form-bean name="ajaxNumeroEchanForm" type="com.pasteur.ci.form.creationpage.ajaxNumeroEchanForm"/>
+        <form-bean name="ModificationRechercheForm" type="com.pasteur.ci.form.modification.ModificationRechercheForm"/>
+         
+        <form-bean name="ajaxPointPrelevPForm" type="com.pasteur.ci.form.creationpage.ajaxPointPrelevPForm"/>
+        <form-bean name="ajaxfamilleAlgueForm" type="com.pasteur.ci.form.creationpage.ajaxFamilleAlgueForm"/>
+          
+        <form-bean name="exempleForm" type="com.pasteur.ci.form.creationpage.ExempleForm"/>
+          
+         <form-bean name="GestionModifTypeToxineForm" type="com.pasteur.ci.form.type_toxine.GestionModifTypeToxineForm"/>
+        <form-bean name="EnregistreModifTypeToxineForm" type="com.pasteur.ci.form.type_toxine.EnregistreModifTypeToxineForm"/>
+        <form-bean name="CreerTypeToxineForm" type="com.pasteur.ci.form.type_toxine.CreerTypeToxineForm"/>
+        
+         <form-bean name="GestionModifTypeGeneToxiciteForm" type="com.pasteur.ci.form.type_gene_toxicite.GestionModifTypeGeneToxiciteForm"/>
+        <form-bean name="EnregistreModifTypeGeneToxiciteForm" type="com.pasteur.ci.form.type_gene_toxicite.EnregistreModifTypeGeneToxiciteForm"/>
+        <form-bean name="CreerTypeGeneToxiciteForm" type="com.pasteur.ci.form.type_gene_toxicite.CreerTypeGeneToxiciteForm"/>
+        
+        <form-bean name="GestionModifTypeGeneCyanoForm" type="com.pasteur.ci.form.type_gene_cyano.GestionModifTypeGeneCyanoForm"/>
+        <form-bean name="EnregistreModifTypeGeneCyanoForm" type="com.pasteur.ci.form.type_gene_cyano.EnregistreModifTypeGeneCyanoForm"/>
+        <form-bean name="CreerTypeGeneCyanoForm" type="com.pasteur.ci.form.type_gene_cyano.CreerTypeGeneCyanoForm"/>
+        
+        <form-bean name="GestionModifGeneForm" type="com.pasteur.ci.form.gene.GestionModifGeneForm"/>
+        <form-bean name="EnregistreModifGeneForm" type="com.pasteur.ci.form.gene.EnregistreModifGeneForm"/>
+        <form-bean name="CreerGeneForm" type="com.pasteur.ci.form.gene.CreerGeneForm"/>
+       
+        
+        <form-bean name="GestionModifSerotypeSalForm" type="com.pasteur.ci.form.serotype_sal.GestionModifSerotypeSalForm"/>
+        <form-bean name="EnregistreSerotypeSalForm" type="com.pasteur.ci.form.serotype_sal.EnregistreSerotypeSalForm"/>
+        <form-bean name="CreerSerotypeSalForm" type="com.pasteur.ci.form.serotype_sal.CreerSerotypeSalForm"/>
+        
+        <form-bean name="gestionFamilleModifForm" type="com.pasteur.ci.form.famille.gestionFamilleModifForm"/>
+        <form-bean name="EnregistreModifFamilleForm" type="com.pasteur.ci.form.famille.EnregistreModifFamilleForm"/>
+        <form-bean name="CreerFamilleForm" type="com.pasteur.ci.form.famille.CreerFamilleForm"/>
+        
+        <form-bean name="GestionModifSerotypeVb" type="com.pasteur.ci.form.serotype_vb.GestionModifSerotypeVb"/>
+        <form-bean name="CreerSerotypeVbForm" type="com.pasteur.ci.form.serotype_vb.CreerSerotypeVbForm"/>
+        <form-bean name="EnregistreSerotypeVbForm" type="com.pasteur.ci.form.serotype_vb.EnregistreSerotypeVbForm"/>
+       
+        <form-bean name="gestionModifHabitatForm" type="com.pasteur.ci.form.habitat.gestionModifHabitatForm"/>
+        <form-bean name="EnregistreModifHabitatForm" type="com.pasteur.ci.form.habitat.EnregistreModifHabitatForm"/>
+        <form-bean name="CreerHabitatForm" type="com.pasteur.ci.form.habitat.CreerHabitatForm"/>
+     
+        
+        <form-bean name="gestionEspeceCyanoModifForm" type="com.pasteur.ci.form.espece_cyano.gestionEspeceCyanoModifForm"/>
+        <form-bean name="EnregistreModifEspeceCyanoForm" type="com.pasteur.ci.form.espece_cyano.EnregistreModifEspeceCyanoForm"/>
+        <form-bean name="CreerEspeceCyanoForm" type="com.pasteur.ci.form.espece_cyano.CreerEspeceCyanoForm"/>
+        
+        <form-bean name="CreerGenreCyanoForm" type="com.pasteur.ci.form.espece_cyano.CreerGenreCyanoForm"/>
+        <form-bean name="gestionModifGenreCyanoForm" type="com.pasteur.ci.form.genre_cyano.gestionModifGenreCyanoForm"/>
+        <form-bean name="EnregistreModifGenreCyanoForm" type="com.pasteur.ci.form.genre_cyano.EnregistreModifGenreCyanoForm"/>
+        <form-bean name="CreerGenreCyanoForm" type="com.pasteur.ci.form.genre_cyano.CreerGenreCyanoForm"/>
+        
+        <form-bean name="gestionEspeceAlgForm" type="com.pasteur.ci.form.espece_algue.gestionEspeceAlgForm"/>
+        <form-bean name="EnregistreModifEspeceAlg" type="com.pasteur.ci.form.espece_algue.EnregistreModifEspeceAlg"/>
+        <form-bean name="CreerEspeceAlgueForm" type="com.pasteur.ci.form.espece_algue.CreerEspeceAlgueForm"/>
+        
+        <form-bean name="gestionGenreAlgModifForm" type="com.pasteur.ci.form.genre_algue.gestionGenreAlgModifForm"/>
+        <form-bean name="EnregistreModifGenreAlgForm" type="com.pasteur.ci.form.genre_algue.EnregistreModifGenreAlgForm"/>
+        <form-bean name="CreerGerneAlgForm" type="com.pasteur.ci.form.genre_algue.CreerGerneAlgForm"/>
+       
+        <form-bean name="CreerForm" type="com.pasteur.ci.form.creationpage.CreerForm"/>
+        
+        <form-bean name="gestionPtprModifForm" type="com.pasteur.ci.form.point_prelevement.gestionPtprModifForm"/>
+        <form-bean name="EnregistreModifPtprForm" type="com.pasteur.ci.form.point_prelevement.EnregistreModifPtprForm"/>
+        <form-bean name="CreerPtprForm" type="com.pasteur.ci.form.point_prelevement.CreerPtprForm"/>
+        
+        <form-bean name="gestionStatprModifForm" type="com.pasteur.ci.form.station_prelevement.gestionStatprModifForm"/>
+        <form-bean name="EnregistreModifStatprForm" type="com.pasteur.ci.form.station_prelevement.EnregistreModifStatprForm"/>
+        <form-bean name="CreerStatprForm" type="com.pasteur.ci.form.station_prelevement.CreerStatprForm"/>
+       
+        <form-bean name="gestionCyanoModifForm" type="com.pasteur.ci.form.cyano.gestionCyanoModifForm"/>
+        <form-bean name="EnregistreModifCyanoForm" type="com.pasteur.ci.form.cyano.EnregistreModifCyanoForm"/>
+        <form-bean name="CreerCyanoForm" type="com.pasteur.ci.form.cyano.CreerCyanoForm"/>
+       
+        <form-bean name="EnregistreModifMateriauxForm" type="com.pasteur.ci.form.materiaux.EnregistreModifMateriauxForm"/>
+        <form-bean name="gestionMateriauxModifForm" type="com.pasteur.ci.form.materiaux.gestionMateriauxModifForm"/>
+        <form-bean name="CreerMateriauxForm" type="com.pasteur.ci.form.materiaux.CreerMateriauxForm"/> 
+        
+        <form-bean name="gestionEclairageModifForm" type="com.pasteur.ci.form.eclairage.gestionEclairageModifForm"/>
+        <form-bean name="EnregistreModifEclairageForm" type="com.pasteur.ci.form.eclairage.EnregistreModifEclairageForm"/>
+        <form-bean name="CreerEclairageForm" type="com.pasteur.ci.form.eclairage.CreerEclairageForm"/>
+        
+        <form-bean name="CreerPlanEauForm" type="com.pasteur.ci.form.planEau.CreerPlanEauForm"/>
+        <form-bean name="EnregistreModifPlanEauForm" type="com.pasteur.ci.form.planEau.EnregistreModifPlanEauForm"/>
+        <form-bean name="gestionPlanEauModifForm" type="com.pasteur.ci.form.planEau.gestionPlanEauModifForm"/>
+        
+        <form-bean name="gestionPratiqueModifForm" type="com.pasteur.ci.form.pratique.gestionPratiqueModifForm"/>
+        <form-bean name="EnregistreModifPratiqueForm" type="com.pasteur.ci.form.pratique.EnregistreModifPratiqueForm"/>
+        <form-bean name="gestionProjetModifForm" type="com.pasteur.ci.form.pratique.gestionProjetModifForm"/>
+       
+        <form-bean name="EnregistreModifProjetFrom" type="com.pasteur.ci.form.pratique.EnregistreModifProjetFrom"/>
+        <form-bean name="CreerPratiqueForm" type="com.pasteur.ci.form.pratique.CreerPratiqueForm"/>
+       
+        <form-bean name="gestionProjetModifForm" type="com.pasteur.ci.form.projet.gestionProjetModifForm"/>
+        <form-bean name="EnregistrementModifProjetForm" type="com.pasteur.ci.form.projet.EnregistrementModifProjetForm"/>
+        <form-bean name="CreerProjetForm" type="com.pasteur.ci.form.projet.CreerProjetForm"/>
+        
+        <form-bean name="gestionType_plan_eauModifForm" type="com.pasteur.ci.form.type_plan_eau.gestionType_plan_eauModifForm"/>
+        <form-bean name="EnregistrementModifType_plan_eauFrom" type="com.pasteur.ci.form.type_plan_eau.EnregistrementModifType_plan_eauFrom"/>
+        <form-bean name="CreerType_plan_eauForm" type="com.pasteur.ci.form.type_plan_eau.CreerType_plan_eauForm"/>
+        
+        <form-bean name="CreerRegionForm" type="com.pasteur.ci.form.region.CreerRegionForm"/>
+        <form-bean name="EnregistrementModifRegionForm" type="com.pasteur.ci.form.region.EnregistrementModifRegionForm"/>
+        <form-bean name="gestionRegionModifForm" type="com.pasteur.ci.form.region.gestionRegionModifForm"/>
+       
+        <form-bean name="CreerQuartierForm" type="com.pasteur.ci.form.quartier.CreerQuartierForm"/>
+        <form-bean name="EnregistreModifQuartierForm" type="com.pasteur.ci.form.quartier.EnregistreModifQuartierForm"/>
+        <form-bean name="gestionQuartierModifForm" type="com.pasteur.ci.form.quartier.gestionQuartierModifForm"/>
+      
+        <form-bean name="EnregistreModifCommuneForm" type="com.pasteur.ci.form.commune.EnregistreModifCommuneForm"/>
+        <form-bean name="CreerCommuneForm" type="com.pasteur.ci.form.commune.CreerCommuneForm"/>
+        <form-bean name="gestionCommuneModifForm" type="com.pasteur.ci.form.commune.gestionCommuneModifForm"/>
+        
+        <form-bean name="CreerUtilisateurForm" type="com.pasteur.ci.form.utilisateur.CreerUtilisateurForm"/>
+        <form-bean name="EnregistreModifUtilisateurForm" type="com.pasteur.ci.form.utilisateur.EnregistreModifUtilisateurForm"/>
+        <form-bean name="gestionUtilisateurModifForm" type="com.pasteur.ci.form.utilisateur.gestionUtilisateurModifForm"/>
+        <form-bean name="NewStrutsActionForm" type="NewStrutsActionForm"/>
+        
+        <form-bean name="LoginappForm" type="com.pasteur.ci.form.LoginappForm"/>    
+    </form-beans>
+    
+    <global-exceptions>
+    
+    </global-exceptions>
+
+    <global-forwards>
+        <forward name="loginpage"    path="/loginapp.jsp"/>
+        <forward name="pageaccueil"  path="/accueil.jsp"/>
+        <forward name="pagerapport"  path="/rapport.jsp"/>
+        
+        <forward name="pagemodif"    path="/modification.jsp"/>        
+    </global-forwards>
+
+    <action-mappings>
+        
+        <action input="/loginapp.jsp" 
+                name="LoginappForm" 
+                path="/loginapp"
+                scope="session" 
+                validate="true"
+                type="com.pasteur.ci.action.LoginappAction">             
+            <forward name="success" path="/accueil.jsp" />            
+        </action>
+        <action path="/administration" type="com.pasteur.ci.action.AdministrationAction">
+            <forward name="success" path="/administration.jsp" />
+        </action>
+        
+        <action path="/deconnexion" type="com.pasteur.ci.action.DeconnexionAction">
+             <forward name="success" path="/loginapp.jsp" />
+        </action>
+        
+        <action path="/gestionutil"
+                type="com.pasteur.ci.action.utilisateur.GestionUtilisateurAction"> 
+             <forward name="success" path="/utilisateur/gestionutilisateur.jsp" />
+             <forward name="failed" path="/administration.jsp" />
+        </action>
+         
+         
+        <action path="/gestionUtilisateur"
+                type="com.pasteur.ci.action.utilisateur.GestionUtilisateurModifAction"                
+                name="gestionUtilisateurModifForm">
+            <forward name="success" path="/utilisateur/modificationUtilisateur.jsp" />
+        </action>
+        
+        <action path="/gestionCommune" 
+                type="com.pasteur.ci.action.commune.GestionCommuneModifAction"
+                name="gestionCommuneModifForm">
+            <forward name="success" path="/commune/modificationCommune.jsp" />            
+        </action>
+        
+        <action input="/utilisateur/modificationUtilisateur.jsp" 
+                name="EnregistreModifUtilisateurForm" 
+                path="/enregistreModifUtilisateur"
+                scope="request"
+                type="com.pasteur.ci.action.utilisateur.EnregistreModifUtilisateurAction">
+            <forward name="success" path="/gestionutil.do" />
+        </action>
+        
+        
+        <action path="/pageadmin" type="com.pasteur.ci.action.PageAdminAction">
+            <forward name="success"    path="/administration.jsp"/>
+            <forward name="failed"     path="/loginapp.jsp"/>
+        </action>
+        
+        <action path="/gestioncom" 
+                type="com.pasteur.ci.action.commune.GestionCommuneAction">            
+            <forward name="success" path="/commune/gestioncommune.jsp" />
+        </action>
+        
+        <action   name="EnregistreModifCommuneForm"
+                  path="/enregistreModifCommune" 
+                  
+                  type="com.pasteur.ci.action.commune.EnregistreModifCommuneAction">
+            <forward name="success" path="/gestioncom.do" />
+        </action>
+        
+        <action path="/creerutilpage"
+                type="com.pasteur.ci.action.utilisateur.CreerUtilisateurPageAction">
+            <forward name="success" path="/utilisateur/creerutilisateur.jsp" />
+        </action>
+        
+        <action input="/utilisateur/creerutilisateur.jsp"
+                name="CreerUtilisateurForm" 
+                path="/creerutil" 
+                scope="request" 
+                type="com.pasteur.ci.action.CreerUtlisateurAction"
+                validate="true"> 
+             <forward name="success" path="/gestionutil.do" />
+             <forward name="failed" path="/administration.jsp" />
+        </action>
+         <action input="/quartier/creerquartier.jsp"
+                 name="CreerQuartierForm" 
+                path="/creerquartier"
+                 scope="session"
+                type="com.pasteur.ci.action.quartier.CreerQuartierAction">
+             <forward name="success" path="/gestionquart.do" />
+        </action>
+        <action path="/creerquartpage" 
+                type="com.pasteur.ci.action.quartier.CreerQuartierPageAction">
+             <forward name="success" path="/quartier/creerquartier.jsp" />
+        </action>
+        
+        <action path="/creercompage" 
+                type="com.pasteur.ci.action.commune.CreerCommunePageAction">
+            <forward name="success" path="/commune/creercommune.jsp" />
+        </action>   
+         
+        <action input="/"
+                name="EnregistreModifFamilleForm"
+                path="/enregistreModifFam" 
+                scope="session"
+                type="com.pasteur.ci.action.famille.EnregistreModifFamilleAction">
+                <forward name="success" path="/gestionfamy.do" />
+        </action>
+        <action path="/creerfampage" 
+                type="com.pasteur.ci.action.famille.CreerFamillePageAction">
+                <forward name="success" path="/famille/creerfamille.jsp" />
+        </action>
+        <action input="/"
+                name="CreerFamilleForm"
+                path="/creerfamille" 
+                scope="session" 
+                type="com.pasteur.ci.action.famille.CreerFamilleAction">
+                <forward name="success" path="/gestionfamy.do" />
+        </action>
+        <action input="/" 
+                name="gestionFamilleModifForm"
+                path="/gestionFamille" 
+                scope="session" 
+                type="com.pasteur.ci.action.famille.GestionFamilleModifAction">
+                <forward name="success" path="/famille/modificationfamille.jsp" />
+        </action>
+            
+        <action path="/gestionfamy"
+                type="com.pasteur.ci.action.famille.GestionFamilleAction">
+                <forward name="success" path="/famille/gestionfamille.jsp" />
+        </action>
+        
+        <action input="/commune/creercommune.jsp"
+                name="CreerCommuneForm" 
+                path="/creecom" 
+                scope="request" 
+                type="com.pasteur.ci.action.commune.CreerCommuneAction"
+                validate="true"> 
+             <forward name="success" path="/gestioncom.do" />
+        </action>
+        
+        <action path="/gestionquart" 
+                type="com.pasteur.ci.action.quartier.GestionQuartierAction">
+            <forward name="success" path="/quartier/gestionquartier.jsp" />
+        </action>
+        <action 
+            input="/quartier/modificationQuartier.jsp"
+            name="gestionQuartierModifForm"
+            path="/gestionQuartier"
+            type="com.pasteur.ci.action.quartier.GestionQuartierModifAction">
+            <forward name="success" path="/quartier/modificationQuartier.jsp" />
+        </action>
+        
+        <action 
+                name="EnregistreModifQuartierForm" 
+                path="/enregistreModifQuartier" 
+                type="com.pasteur.ci.action.quartier.EnregistreModifQuartierAction">
+                <forward name="success" path="/gestionquart.do" />
+        </action>
+        <action path="/gestionreg" 
+                type="com.pasteur.ci.action.region.GestionRegionAction">
+                <forward name="success" path="/region/gestionregion.jsp" />
+        </action>
+        <action input="/" 
+                name="gestionRegionModifForm" 
+                path="/gestionRegion" scope="session" 
+                type="com.pasteur.ci.action.region.GestionRegionModifAction">
+                <forward name="success" path="/region/modificationregion.jsp" />
+        </action>
+        <action input="/" 
+                name="EnregistrementModifRegionForm" 
+                path="/enregistreModifRegion" scope="session" 
+                type="com.pasteur.ci.action.region.EnregistreModifRegionAction">
+                <forward name="success" path="/gestionreg.do" />
+        </action>
+        <action path="/creerregpage" 
+                type="com.pasteur.ci.action.region.CreerRegionPageAction">
+                <forward name="success" path="/region/creerregion.jsp" />
+        </action>
+        <action input="/" 
+                name="CreerRegionForm" 
+                path="/creerregion"
+                scope="session" 
+                type="com.pasteur.ci.action.region.CreerRegionAction">
+                <forward name="success" path="/gestionreg.do" />
+        </action>
+        <action input="/" 
+                name="gestionType_plan_eauModifForm" 
+                path="/gestionType_plan_eau" 
+                scope="session" 
+                type="com.pasteur.ci.action.type_plan_eau.GestionTypPlanEauModifAction">
+                <forward name="success" path="/type_plan_eau/modificationtype_plan_eau.jsp" />
+       </action>
+        <action path="/gestiontyppe" 
+                type="com.pasteur.ci.action.type_plan_eau.GestionTypPlanEauAction">
+                <forward name="success" path="/type_plan_eau/gestiontype_plan_eau.jsp" />
+        </action>
+        <action input="/" 
+                name="EnregistrementModifType_plan_eauFrom" 
+                path="/enregistreModifType_plan_eau" 
+                scope="session" type="com.pasteur.ci.action.type_plan_eau.EnregistreModifTypPlanEauAction">
+                <forward name="success" path="/gestiontyppe.do" />
+        </action>
+        <action path="/creertyppepage" 
+                type="com.pasteur.ci.action.type_plan_eau.CreerTypPlanEauPageAction">
+                <forward name="success" path="/type_plan_eau/creertype_plan_eau.jsp" />
+        </action>
+        <action input="/" 
+                name="CreerType_plan_eauForm" 
+                path="/creertypeplaneau" 
+                
+                type="com.pasteur.ci.action.type_plan_eau.CreerTypPlanEauAction">
+                <forward name="success" path="/gestiontyppe.do" />
+        </action>
+        <action input="/"
+                name="gestionProjetModifForm" 
+                path="/gestionProjet" 
+                scope="session" 
+                type="com.pasteur.ci.action.projet.GestionProjetModifAction">
+                <forward name="success" path="/projet/modificationprojet.jsp" />
+        </action>
+        <action path="/gestionproj" 
+                type="com.pasteur.ci.action.projet.GestionProjetAction">
+                <forward name="success" path="/projet/gestionprojet.jsp" />
+        </action>
+        <action input="/" 
+                name="EnregistrementModifProjetForm" 
+                path="/enregistreModifProjet" scope="session" 
+                type="com.pasteur.ci.action.projet.EnregistreModifProjetAction">
+                <forward name="success" path="/gestionproj.do" />
+        </action>
+        <action path="/creerprojetpage"
+                type="com.pasteur.ci.action.projet.CreerProjetPageAction">
+                <forward name="success" path="/projet/creerprojet.jsp" />
+        </action>
+        <action input="/projet/gestionprojet.jsp" 
+                name="CreerProjetForm" 
+                path="/creerprojet" 
+                scope="session" 
+                type="com.pasteur.ci.action.projet.CreerProjetAction">
+                <forward name="success" path="/gestionproj.do" />
+        </action>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <action input="/"
+                name="gestionPratiqueModifForm"
+                path="/gestionPratique"
+                scope="session" 
+                type="com.pasteur.ci.action.pratique.GestionPratiqueModifAction">
+                <forward name="success" path="/pratique/modificationpratique.jsp" />
+        </action>
+        <action 
+            path="/gestionpra"
+            type="com.pasteur.ci.action.pratique.GestionPratiqueAction">
+            <forward name="success" path="/pratique/gestionpratique.jsp" />
+        </action>
+        <action input="/"
+                name="EnregistreModifPratiqueForm"
+                path="/enregistreModifPratique"
+                scope="session" type="com.pasteur.ci.action.pratique.EnregistreModifPratiqueAction">
+                <forward name="success" path="/gestionpra.do" />
+        </action>
+        <action path="/creerprapage"
+                type="com.pasteur.ci.action.pratique.CreerPratiquePageAction">
+                <forward name="success" path="/pratique/creerpratique.jsp"/>
+        </action>
+        <action input="/pratique/creerpratique.jsp"
+                name="CreerPratiqueForm"
+                path="/creerpratique"
+                scope="session" 
+                validate="true"
+                type="com.pasteur.ci.action.pratique.CreerPratiqueAction">
+                <forward name="success" path="/gestionpra.do" />
+        </action>
+        
+        <action path="/gestionplaneau" 
+                type="com.pasteur.ci.action.planEau.GestionPlanEauAction" >
+               <forward name="success" path="/plan_eau/gestionPlanEau.jsp" />   
+        </action>
+        
+        <action input="/"
+                name="EnregistreModifPlanEauForm"
+                path="/enregistreModifPlanEau"
+                scope="request"
+                type="com.pasteur.ci.action.planEau.EnregistreModifPlanEauAction">
+                <forward name="success" path="/gestionplaneau.do" />
+        </action>
+       
+
+
+
+        <action input="/"
+                name="gestionPlanEauModifForm"
+                path="/gestionPlanEau"
+                scope="session"
+                type="com.pasteur.ci.action.planEau.GestionPlanEauModifAction">
+                <forward name="success" path="/plan_eau/modificationPlanEau.jsp" />
+        </action>
+        <action input="/plan_eau/creerPlanEau.jsp" 
+                name="CreerPlanEauForm"
+                path="/creerplan_eau"
+                scope="request" 
+                type="com.pasteur.ci.action.planEau.CreerPlanEauAction">
+                <forward name="success" path="/gestionplaneau.do" />
+        </action>
+        
+        
+        <action path="/creerplan_eaupage"
+                type="com.pasteur.ci.action.planEau.CreerPlanEauPageAction">
+                <forward name="success" path="/plan_eau/creerPlanEau.jsp" />
+        </action>
+        
+        
+         
+        
+        <action input="/"
+                name="gestionEclairageModifForm"
+                path="/gestionEclaire" 
+                scope="request" 
+                type="com.pasteur.ci.action.eclairage.GestionEclairageModfiAction">
+                <forward name="success" path="/eclairage/modificationeclairage.jsp" />
+        </action>
+        <action path="/gestioneclaire"
+                type="com.pasteur.ci.action.eclairage.GestionEclairageAction">
+                <forward name="success" path="/eclairage/gestioneclairage.jsp" />
+        </action>
+        <action input="/"
+                name="EnregistreModifEclairageForm"
+                path="/enregistreModifEclaire"
+                scope="request" 
+                type="com.pasteur.ci.action.eclairage.EnregistreModifEclairageAction">
+                <forward name="success" path="/gestioneclaire.do" />
+        </action>
+        <action path="/creeeclairepage"
+                type="com.pasteur.ci.action.eclairage.CreerEclairagePageAction">
+                <forward name="success" path="/eclairage/creereclairage.jsp" />
+        </action>
+        <action input="/"
+                name="CreerEclairageForm"
+                path="/creeeclaire"
+                scope="session" 
+                type="com.pasteur.ci.action.eclairage.CreerEclairageAction">
+                <forward name="success" path="/gestioneclaire.do" />
+        </action>
+        
+        <action input="/"
+                name="CreerMateriauxForm"
+                path="/creermat"
+                scope="request" 
+                type="com.pasteur.ci.action.materiaux.CreerMateriauxAction">
+                <forward name="success" path="/gestionmat.do" />
+        </action>
+        <action input="/"
+                name="gestionMateriauxModifForm"
+                path="/modifiMat" 
+                scope="session" 
+                type="com.pasteur.ci.action.materiaux.GestionMatModifAction">
+                <forward name="success" path="/materiaux_construction/modificationmat.jsp" />
+        </action>
+        <action path="/gestionmat"
+                type="com.pasteur.ci.action.materiaux.GestionMateriauxAction">
+                <forward name="success" path="/materiaux_construction/gestionmat.jsp" />
+        </action>
+        <action input="/"
+                name="EnregistreModifMateriauxForm"
+                path="/enregistreModifMat"
+                scope="request" type="com.pasteur.ci.action.materiaux.EnregistreModifMateriauxAction">
+                <forward name="success" path="/gestionmat.do" />
+        </action>
+        <action path="/pagecreerMat"
+                type="com.pasteur.ci.action.materiaux.CreerMateriauxPageAction">
+                <forward name="success" path="/materiaux_construction/creermat.jsp" />
+        </action>
+        <action input="/"
+                name="gestionCyanoModifForm"
+                path="/modifiCyano" 
+                scope="request"
+                type="com.pasteur.ci.action.cyano.ModifiCyanoAction">
+                <forward name="success" path="/cyano/modificationcyano.jsp" />
+        </action>
+        <action path="/gestioncyano"
+                type="com.pasteur.ci.action.cyano.GestionCyanoAction">
+            <forward name="success" path="/cyano/gestioncyano.jsp" />
+        </action>
+        <action input="/"
+                name="EnregistreModifCyanoForm" 
+                path="/enregistreModifCyano" 
+                scope="request"
+                type="com.pasteur.ci.action.cyano.EnregistreCyanoModifAction">
+             <forward name="success" path="/gestioncyano.do" />
+        </action>
+        <action input="/"
+                name="CreerCyanoForm"
+                path="/creercyano"
+                scope="request"
+                type="com.pasteur.ci.action.cyano.CreerCyanoAction">
+             <forward name="success" path="/gestioncyano.do" />
+        </action>
+        <action path="/creercyanopage"
+                type="com.pasteur.ci.action.cyano.CreerCyanoPageAction">
+                <forward name="success" path="/cyano/creercyano.jsp" />
+        </action>
+        <action input="/"
+                name="gestionStatprModifForm"
+                path="/gestionmodifstatpr"
+                scope="request"
+                type="com.pasteur.ci.action.satation_prelevement.GestionStatprModifAction">
+                <forward name="success" path="/station_de_prelevement/modificationstationprelevement.jsp" />
+        </action>
+        <action input="/"
+                path="/gestionstatpr" 
+                scope="request" 
+                type="com.pasteur.ci.action.satation_prelevement.GestionStatprAction">
+                <forward name="success" path="/station_de_prelevement/gestionstationprelevement.jsp" />
+        </action>
+        <action input="/"
+                name="EnregistreModifStatprForm"
+                path="/enregistrestatpr" 
+                scope="request" 
+                type="com.pasteur.ci.action.satation_prelevement.EnregistreModifStatprAction">
+                <forward name="success" path="/gestionstatpr.do" />
+        </action>
+        <action  
+                path="/creerpagestatpr" 
+                scope="session" 
+            type="com.pasteur.ci.action.satation_prelevement.CreerStatprPageAction">
+            <forward name="success" path="/station_de_prelevement/creerstationprelevement.jsp" />
+        </action>
+                
+        <action input="/"
+                name="CreerStatprForm" 
+                path="/creerstatpr"
+                scope="request" 
+                type="com.pasteur.ci.action.satation_prelevement.CreerStatprAction">
+                <forward name="success" path="/gestionstatpr.do" />
+        </action>
+        <action input="/"
+                name="gestionPtprModifForm"
+                path="/gestionmodifptpr"
+                scope="request"
+                type="com.pasteur.ci.action.point_prelevement.GestionPtprModifAction">
+                <forward name="success" path="/point_de_prelevement/modificationpointprelevement.jsp" />
+        </action>
+        <action path="/gestionptpr"
+                type="com.pasteur.ci.action.point_prelevement.GestionPtprAction">
+                <forward name="success" path="/point_de_prelevement/gestionpointprelevement.jsp" />
+        </action>
+        <action input="/"
+                name="EnregistreModifPtprForm"
+                path="/enregistreptpr"
+                scope="request"
+                type="com.pasteur.ci.action.point_prelevement.EnregistreModifPtprAction">
+            <forward name="success" path="/gestionptpr.do" />
+        </action>
+        <action path="/creerpageptpr"
+                type="com.pasteur.ci.action.point_prelevement.CreerPtprPageAction">
+                <forward name="success" path="/point_de_prelevement/creerpointprelevement.jsp" />
+        </action>
+        <action input="/"
+                name="CreerPtprForm"
+                path="/creerptpr"
+                scope="request"
+                type="com.pasteur.ci.action.point_prelevement.CreerPtprAction">
+                <forward name="success" path="/gestionptpr.do" />
+        </action>
+        <action path="/pagecreation" 
+                name="CreerForm"
+                type="com.pasteur.ci.action.creation.Chargepagecreation">
+                <!--<forward name="success" path="/creation.jsp" /> -->
+                <forward name="success" path="/creation.jsp"/>
+        </action>
+        <action input="/"
+                name="CreerForm"
+                path="/creaaction"
+                scope="request" 
+                type="com.pasteur.ci.action.creation.Creecreation">
+                <forward name="success" path="/accueil.jsp" />
+        </action>
+       
+        <action input="/" 
+                name="gestionGenreAlgModifForm"
+                path="/gestionGenre_alg"
+                scope="request" 
+                type="com.pasteur.ci.action.genre_algue.GestionGenreAlgueModifAction">
+                <forward name="success" path="/genre_algue/modificationgenre_algue.jsp"/>
+        </action>
+        <action path="/gestiongenre_alg"
+                type="com.pasteur.ci.action.genre_algue.GestionGenreAlgueAction">
+             <forward name="success" path="/genre_algue/gestiongenre_algue.jsp"/>
+        </action>
+        <action input="/"
+                name="EnregistreModifGenreAlgForm"
+                path="/enregistreModifGenre_alg" 
+                scope="request"
+                type="com.pasteur.ci.action.genre_algue.EnregistreModifGenreAlgAction">
+                 <forward name="success" path="/gestiongenre_alg.do" />
+        </action>
+        <action path="/creergenre_algpage"
+                type="com.pasteur.ci.action.genre_algue.CreerGenreAlguePageAction">
+                <forward name="success" path="/genre_algue/creergenre_algue.jsp"/>
+        </action>
+        <action input="/"
+                name="CreerGerneAlgForm"
+                path="/creergenre_alg"
+                scope="request" 
+                type="com.pasteur.ci.action.genre_algue.CreerGenreAlgAction">
+            
+                <forward name="success" path="/gestiongenre_alg.do" />
+        </action>
+        
+        
+        
+        
+        <action input="/"
+                name="gestionEspeceAlgForm"
+                path="/gestionEspece_alg"
+                scope="session" 
+                type="com.pasteur.ci.action.espece_algue.GestionEspeceModifAction">
+            <forward name="success" path="/espece_algue/modificationespece_algue.jsp"/>
+                
+        </action>
+        <action path="/gestionespece_alg"
+                type="com.pasteur.ci.action.espece_algue.GestionEspeceAction">
+            <forward name="success" path="/espece_algue/gestionespece_algue.jsp"/>
+            
+        </action>
+        <action input="/"
+                name="EnregistreModifEspeceAlg"
+                path="/enregistreModifEspece_alg"
+                scope="request" 
+                type="com.pasteur.ci.action.espece_algue.EnregistreModifEspeceAction">
+            <forward name="success" path="/gestionespece_alg.do" />
+        </action>
+        <action path="/creerespece_algpage"
+                type="com.pasteur.ci.action.espece_algue.CreerEspeceAlgPageAction">
+                <forward name="success" path="/espece_algue/creerespece_algue.jsp"/>
+        </action>
+        <action input="/"
+                name="CreerEspeceAlgueForm"
+                path="/creerespece_alg"
+                scope="session" 
+                type="com.pasteur.ci.action.espece_algue.CreerEspeceAlgAction">
+                <forward name="success" path="/gestionespece_alg.do" />
+        </action>
+        <action input="/"
+                name="gestionModifGenreCyanoForm"
+                path="/gestionModifGenre_cyano"
+                scope="request"
+                type="com.pasteur.ci.action.genre_cyano.GestionGenreCyanoModifAction">
+                <forward name="success" path="/genre_cyano/modificationgenre_cyano.jsp"/>
+                
+        </action>
+        <action path="/gestiongenre_cyano"
+                type="com.pasteur.ci.action.genre_cyano.GestionGenreCyanoAction">
+                <forward name="success" path="/genre_cyano/gestiongenre_cyano.jsp"/>
+        </action>
+        <action input="/" 
+                name="EnregistreModifGenreCyanoForm"
+                path="/enregistreModifGenre_cyano" 
+                scope="request" 
+                type="com.pasteur.ci.action.genre_cyano.EnregistreModifGenreCyanoAction">
+                <forward name="success" path="/gestiongenre_cyano.do" />
+        </action>
+        <action path="/creergenre_cyanopage"
+                type="com.pasteur.ci.action.genre_cyano.CreerGenreCyanoPageAction">
+                <forward name="success" path="/genre_cyano/creergenre_cyano.jsp"/>
+        </action>
+        <action input="/" 
+                name="CreerGenreCyanoForm" 
+                path="/creergenre_cyano" 
+                scope="request"
+                type="com.pasteur.ci.action.genre_cyano.CreerGenreCyanoAction">
+                <forward name="success" path="/gestiongenre_cyano.do" />
+        </action>
+        
+        
+        
+        
+        
+        <action input="/"
+                name="gestionEspeceCyanoModifForm"
+                path="/gestionModifEsepce_cyano"
+                scope="session" type="com.pasteur.ci.action.espece_cyano.GestionEspeceCyanoModifAction">
+                 <forward name="success" path="/espece_cyano/modificationespece_cyano.jsp"/>
+        </action>
+        <action path="/gestionespece_cyano"
+                type="com.pasteur.ci.action.espece_cyano.GestionEspeceCyanoAction">
+                 <forward name="success" path="/espece_cyano/gestionespece_cyano.jsp"/>
+        </action>
+        <action input="/" 
+                name="EnregistreModifEspeceCyanoForm" 
+                path="/enregistreModifEspece_cyano" 
+                scope="request" 
+                type="com.pasteur.ci.action.espece_cyano.EnregistreModifEspeceCyanoAction">
+                <forward name="success" path="/gestionespece_cyano.do" />
+        </action>
+            
+        <action path="/creerespece_cyanopage"
+                type="com.pasteur.ci.action.espece_cyano.CreerEspeceCyanoPageAction">
+                <forward name="success" path="/espece_cyano/creerespece_cyano.jsp"/>
+        </action>
+        <action input="/"
+                name="CreerEspeceCyanoForm"
+                path="/creerespece_cyano"
+                scope="request"
+                type="com.pasteur.ci.action.espece_cyano.CreerEspeceCyanoAction">
+                <forward name="success" path="/gestionespece_cyano.do" />
+                
+        </action>
+        
+        
+      
+        
+        <action input="/" name="gestionModifHabitatForm" 
+                path="/gestionModifHabitat" scope="request"
+                type="com.pasteur.ci.action.habitat.GestionHabitatModifAction">
+                <forward name="success" path="/habitat/modificationhabitat.jsp"/>
+        </action>
+         
+        <action path="/gestionhabitat"
+                type="com.pasteur.ci.action.habitat.GestionHabitatAction">
+                <forward name="success" path="/habitat/gestionhabitat.jsp"/>
+        </action>
+        <action input="/"
+                name="EnregistreModifHabitatForm" 
+                path="/enregistreModifHabitatAction"
+                scope="request" 
+                type="com.pasteur.ci.action.habitat.EnregistreModifHabitatAction">
+                <forward name="success" path="/gestionhabitat.do" />
+                
+        </action>
+        <action path="/creerhabitatpage"
+                type="com.pasteur.ci.action.habitat.CreerHabitatPageAction">
+                <forward name="success" path="/habitat/creerhabitat.jsp"/>
+        </action>
+        <action input="/" 
+                name="CreerHabitatForm" 
+                path="/creerhabitat"
+                scope="request" 
+                type="com.pasteur.ci.action.habitat.CreerHabitatAction">
+                <forward name="success" path="/gestionhabitat.do" />
+        </action>
+        
+        
+        <action input="/"
+                name="GestionModifSerotypeSalForm" 
+                path="/pageModifSerotypeSal"
+                scope="request" 
+                type="com.pasteur.ci.action.serotype_sal.GestionSerotypeSalMadifAction">
+                <forward name="success" path="/serotype_sal/modificationserotype_sal.jsp" />
+        </action>
+        <action path="/pageGestionSerotypeSal"
+                type="com.pasteur.ci.action.serotype_sal.GestionSerotypeSalAction">
+                <forward name="success" path="/serotype_sal/gestionserotype_sal.jsp" />
+        </action>
+        <action input="/" 
+                name="EnregistreSerotypeSalForm"
+                path="/enregistreModifSerotypeSal"
+                scope="request" 
+                type="com.pasteur.ci.action.serotype_sal.EnregistreModifSerotypeSalAction">
+            <forward name="success" path="/pageGestionSerotypeSal.do" />
+                
+        </action>
+        <action path="/pageCreationSerotypeSal"
+                type="com.pasteur.ci.action.serotype_sal.CreerSerotypeVbPageAction">
+                <forward name="success" path="/serotype_sal/creerserotype_sal.jsp" />
+        </action>
+        <action input="/"
+                name="CreerSerotypeSalForm"
+                path="/creerSerotySal"
+                scope="request"
+                type="com.pasteur.ci.action.serotype_sal.CreerSerotypeVbAction">
+                <forward name="success" path="/pageGestionSerotypeSal.do" />
+        </action>
+        
+        
+        
+        <action input="/"
+                name="GestionModifSerotypeVb"
+                path="/pageModiSerotypeVb"
+                scope="request" 
+                type="com.pasteur.ci.action.serotype_vb.GestionSerotypeVbModifAction">
+                 <forward name="success" path="/serotype_vb/modificationserotype_vb.jsp" />
+        </action>
+        <action path="/pageGestionSerotypeVb"
+                type="com.pasteur.ci.action.serotype_vb.GestionSerotypeVbAction">
+                 <forward name="success" path="/serotype_vb/gestionserotype_vb.jsp" />
+        </action>
+        <action input="/"
+                name="EnregistreSerotypeVbForm"
+                path="/enregistreModifSerotypeVb"
+                scope="request" 
+                type="com.pasteur.ci.action.serotype_vb.EnregistreModifSerotypeVbAction">
+                <forward name="success" path="/pageGestionSerotypeVb.do" />
+        </action>
+        <action path="/pageCreationSerotypeVb"
+                type="com.pasteur.ci.action.serotype_vb.CreerSerotypeVbPageAction">
+                 <forward name="success" path="/serotype_vb/creerserotype_vb.jsp" />
+        </action>
+        <action input="/"
+                name="CreerSerotypeVbForm" 
+                path="/creerSerotypVb" 
+                scope="request" 
+                type="com.pasteur.ci.action.serotype_vb.CreerSerotypeVbAction">
+            <forward name="success" path="/pageGestionSerotypeVb.do" />
+        </action>
+        
+        
+        
+        <action input="/"
+                name="GestionModifGeneForm"
+                path="/pageModifGeneCyano" 
+                scope="request" 
+                type="com.pasteur.ci.action.gene.GestionModifGeneCyanoAction">
+                 <forward name="success" path="/gene_cyano/modificationgene_cyano.jsp" />
+        </action>
+        <action path="/pageGestionCyano"
+                type="com.pasteur.ci.action.gene.GestionGeneCyanoAction">
+                 <forward name="success" path="/gene_cyano/gestiongene_cyano.jsp" />
+        </action>
+        <action input="/"
+                name="EnregistreModifGeneForm" 
+                path="/enregistreModifGeneCyanoActrion" 
+                
+                scope="request"
+                type="com.pasteur.ci.action.gene.EnregistreModifGeneCyanoAction">
+                 <forward name="success" path="/pageGestionCyano.do" />
+        </action>
+        <action path="/creationPageGeneCyano" 
+                type="com.pasteur.ci.action.gene.CreerGeneCyanoPageAction">
+                <forward name="success" path="/gene_cyano/creergene_cyano.jsp" />
+        </action>
+        <action input="/" 
+                name="CreerGeneForm" 
+                path="/creationGeneCyano"
+                scope="request" 
+                type="com.pasteur.ci.action.gene.CreerGeneCyanoAction">
+                 <forward name="success" path="/pageGestionCyano.do" />
+        </action>
+        
+        
+        
+        
+        <action 
+                input="/"
+                name="GestionModifTypeGeneCyanoForm"
+                path="/pageModifTypeGeneCyano" 
+                scope="request"
+                type="com.pasteur.ci.action.type_gene_cyano.GestionModifPageTypeGeneCyanoAction">
+                <forward name="success" path="/type_gene_cyano/modificationtype_gene_cyano.jsp" />
+        </action>
+        <action 
+                path="/pageGestionTypeGeneCyano"
+                type="com.pasteur.ci.action.type_gene_cyano.GestionPageTypeGeneCyanoAction">
+                <forward name="success" path="/type_gene_cyano/gestiontype_gene_cyano.jsp" />
+        </action>
+            
+        <action 
+                input="/" 
+                name="EnregistreModifTypeGeneCyanoForm" 
+                path="/enregistreModifTypeGeneCyano"
+                scope="request" 
+                type="com.pasteur.ci.action.type_gene_cyano.EnregistreModifTypeGeneCyanoAction">
+                 <forward name="success" path="/pageGestionTypeGeneCyano.do" />
+        </action>
+        
+        <action 
+            path="/creationPageTypeGeneCyano" 
+            type="com.pasteur.ci.action.type_gene_cyano.CreerPageTypeGeneCyanoAction">
+            <forward name="success" path="/type_gene_cyano/creertype_gene_cyano.jsp" />
+           
+        </action>
+        <action 
+            input="/"
+            name="CreerTypeGeneCyanoForm" 
+            path="/creationTypeGeneCyano" 
+            scope="request" 
+            type="com.pasteur.ci.action.type_gene_cyano.CreerTypeGeneCyanoAction">
+             <forward name="success" path="/pageGestionTypeGeneCyano.do" />    
+            
+        </action>
+        
+        
+          <action 
+                input="/"
+                name="GestionModifTypeGeneToxiciteForm"
+                path="/pageModifTypeGeneToxicite" 
+                scope="request"
+                type="com.pasteur.ci.action.type_gene_toxicite.GestionModifPageTypeGeneToxiciteAction">
+                <forward name="success" path="/type_gene_toxicite/modificationtype_gene_toxicite.jsp" />
+        </action>
+        <action 
+                path="/pageGestionTypeGeneToxicite"
+                type="com.pasteur.ci.action.type_gene_toxicite.GestionPageTypeGeneToxiciteAction">
+                <forward name="success" path="/type_gene_toxicite/gestiontype_gene_toxicite.jsp" />
+        </action>
+            
+        <action 
+                input="/" 
+                name="EnregistreModifTypeGeneToxiciteForm" 
+                path="/enregistreModifTypeGeneToxicite"
+                scope="request" 
+                type="com.pasteur.ci.action.type_gene_toxicite.EnregistreModifTypeGeneToxiciteAction">
+                 <forward name="success" path="/pageGestionTypeGeneToxicite.do" />
+        </action>
+        
+        <action 
+            path="/creationPageTypeGeneToxicite" 
+            type="com.pasteur.ci.action.type_gene_toxicite.CreerPageTypeGeneToxiciteAction">
+            <forward name="success" path="/type_gene_toxicite/creertype_gene_toxicite.jsp" />
+           
+        </action>
+        <action 
+            input="/"
+            name="CreerTypeGeneToxiciteForm" 
+            path="/creationTypeGeneToxicite" 
+            scope="request" 
+            type="com.pasteur.ci.action.type_gene_toxicite.CreerTypeGeneToxiciteAction">
+             <forward name="success" path="/pageGestionTypeGeneToxicite.do" />    
+            
+        </action>
+        
+        
+        <action 
+                input="/"
+                name="GestionModifTypeToxineForm"
+                path="/pageModifTypeToxine" 
+                scope="request"
+                type="com.pasteur.ci.action.type_toxine.GestionModifPageTypeToxineAction">
+                <forward name="success" path="/type_toxine/modificationtype_toxine.jsp" />
+        </action>
+        <action 
+                path="/pageGestionTypeToxine"
+                type="com.pasteur.ci.action.type_toxine.GestionPageTypeToxineAction">
+                <forward name="success" path="/type_toxine/gestiontype_toxine.jsp" />
+        </action>
+            
+        <action 
+                input="/" 
+                name="EnregistreModifTypeToxineForm" 
+                path="/enregistreModifTypeToxine"
+                scope="request" 
+                type="com.pasteur.ci.action.type_toxine.EnregistreModifTypeToxineAction">
+                 <forward name="success" path="/pageGestionTypeToxine.do" />
+        </action>
+        
+        <action 
+            path="/creationPageTypeToxine" 
+            type="com.pasteur.ci.action.type_toxine.CreerPageTypeToxineAction">
+            <forward name="success" path="/type_toxine/creertype_toxine.jsp" />
+           
+        </action>
+        <action 
+            input="/"
+            name="CreerTypeToxineForm" 
+            path="/creationTypetoxine"
+            scope="request" 
+            type="com.pasteur.ci.action.type_toxine.CreerTypeToxineAction">
+             <forward name="success" path="/pageGestionTypeToxine.do" />    
+            
+        </action>
+        <action 
+            input="/creation.jsp"
+            name="ajaxPointPrelevPForm" 
+            path="/datapointprelev" 
+            scope="request"
+            type="com.pasteur.ci.action.creation.ajaxPointPrelevAction">
+          <forward name="success" path="/creation.jsp" />
+        </action>
+        
+         <action 
+            input="/exemple.jsp"
+            name="exempleForm" 
+            path="/exemple" 
+            scope="request"
+            type="com.pasteur.ci.action.creation.ExempleAction">
+          <forward name="success" path="/exemple.jsp" />
+        </action>
+       
+        <action  input="/" 
+                name="ajaxfamilleAlgueForm" 
+                path="/datafamillealgue"
+                scope="request"
+                type="com.pasteur.ci.action.creation.ajaxGenreAlgueAction">
+        <forward name="success" path="/popup_genre_algue.jsp" />
+        
+        </action>
+        
+        <action input="/modification.jsp"
+                name="ModificationRechercheForm"
+                path="/rechercheEchantillon" 
+                scope="request" 
+                type="com.pasteur.ci.action.modification.ModificationRechechercheAction">
+        <forward name="success" path="/modification_1.jsp" />
+        <forward name="failed" path="/modification.jsp" />
+        </action>
+        <action input="/creation.jsp" 
+                name="ajaxNumeroEchanForm" 
+                path="/numeroEchan"
+                scope="session" 
+                type="com.pasteur.ci.action.creation.ajaxNumEchantAction">
+            <forward name="success" path="/creation.jsp" />
+        </action>
+        <action input="/modification_1.jsp" 
+                name="CreerForm"
+                path="/updateaction"
+                scope="request"
+                type="com.pasteur.ci.action.modification.UpdateAction">
+            <forward name="success" path="/accueil.jsp" />
+        </action>
+        <action input="/" 
+                name="rapport" 
+                path="/rapport" 
+                scope="session" 
+                type="com.pasteur.ci.action.rapport.affiche">
+                <forward name="success" path="/rapport.jsp" />
+        </action>
+         
+         
+        <action path="/prochain" forward="/exemple.jsp"/>
+                
+        <action path="/loginpage" forward="/loginapp.jsp"/>
+        
+        <action path="/accueil" forward="/accueil.jsp"/>
+        
+    </action-mappings>
+    
+    <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
+
+    <message-resources parameter="com/pasteur/ci/resource/ApplicationResource"/>    
+    
+    <!-- ========================= Tiles plugin ===============================-->
+    <!--
+    This plugin initialize Tiles definition factory. This later can takes some
+    parameters explained here after. The plugin first read parameters from
+    web.xml, thenoverload them with parameters defined here. All parameters
+    are optional.
+    The plugin should be declared in each struts-config file.
+    - definitions-config: (optional)
+    Specify configuration file names. There can be several comma
+    separated file names (default: ?? )
+    - moduleAware: (optional - struts1.1)
+    Specify if the Tiles definition factory is module aware. If true
+    (default), there will be one factory for each Struts module.
+    If false, there will be one common factory for all module. In this
+    later case, it is still needed to declare one plugin per module.
+    The factory will be initialized with parameters found in the first
+    initialized plugin (generally the one associated with the default
+    module).
+    true : One factory per module. (default)
+    false : one single shared factory for all modules
+    - definitions-parser-validate: (optional)
+    Specify if xml parser should validate the Tiles configuration file.
+    true : validate. DTD should be specified in file header (default)
+    false : no validation
+
+    Paths found in Tiles definitions are relative to the main context.
+    -->
+    <plug-in className="org.apache.struts.tiles.TilesPlugin" >
+        <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />      
+        <set-property property="moduleAware" value="true" />
+    </plug-in>
+    
+    <!-- ========================= Validator plugin ================================= -->
+    
+    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property
+            property="pathnames"
+            value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/>
+    </plug-in>
+  
+</struts-config>

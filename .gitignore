@@ -1,0 +1,21 @@
+
+
+# compiled code #
+*.class
+# Package Files #
+*.war
+*.jar
+
+
+# IDE files #
+.project
+build.xml
+
+
+build/
+sources/
+Code/
+nbproject/
+
+
+ 
